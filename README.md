@@ -15,7 +15,7 @@ There are three modules :
 
 SeaOrm provides a convenient method to generate entities from SQL Tables directly by reading the Database.
 
-### serde
+### serde
 
 Serde provides an easy way to deserialize content making some verifications on types including database enums and array of database enums (using postgres).
 
