@@ -1,7 +1,7 @@
 ## JamClub in Rust
 
-This is my first projet in Rust. I'm an hobbiist developper.
-i
+This is my first project in Rust. I'm an hobbiist developper.
+
 ### JamClub modules
 There are three modules :
 
