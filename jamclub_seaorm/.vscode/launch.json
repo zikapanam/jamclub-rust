@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'jamclub-seaorm'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=jamclub-seaorm",
+                    "--package=jamclub-seaorm"
+                ],
+                "filter": {
+                    "name": "jamclub-seaorm",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'jamclub-seaorm'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=jamclub-seaorm",
+                    "--package=jamclub-seaorm"
+                ],
+                "filter": {
+                    "name": "jamclub-seaorm",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

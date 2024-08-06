@@ -1,0 +1,17 @@
+[package]
+name = "jamclub_csvimport"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dotenvy = "0.15.7"
+sea-orm = { version = "1.0.0", features = ["uuid", "runtime-async-std", "sqlx-postgres", "postgres-array", "chrono", "bigdecimal", "serde_json"] }
+csv = "1.3.0"
+jamclub_seaorm = { path = "../jamclub_seaorm" }
+async-std = { version = "1.12.0", features = ["attributes"] }
+log = "0.4.22"
+serde = { version = "1.0.204", features = ["derive"] }
+futures = "0.3.30"
+chrono = "0.4.38"
+chrono-tz = "0.9.0"
+thiserror = "1.0.63"
